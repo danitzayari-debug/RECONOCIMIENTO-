@@ -11,7 +11,7 @@ st.markdown("- Deslizador para ajustar sensibilidad)")
 
 ## Cómo ejecutar localmente
 
-st.markdown(`"""`
+st.markdown(`""`
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
