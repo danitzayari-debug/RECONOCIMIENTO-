@@ -11,7 +11,11 @@ st.markdown("- Deslizador para ajustar sensibilidad)")
 
 ## Cómo ejecutar localmente
 
+st.markdown("""
 ```bash
+pip install -r requirements.txt
+streamlit run app.py
+
 git clone https://github.com/tu_usuario/alpaca-cell-detector.git
 cd alpaca-cell-detector
 pip install -r requirements.txt
