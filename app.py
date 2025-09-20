@@ -24,6 +24,8 @@ import requests
 from io import BytesIO
 import os
 
+# Esta aplicación web permite contar y clasificar ovocitos o embriones de alpaca desde imágenes usando OpenCV y Streamlit.
+
 st.set_page_config(page_title="Contador de Células de Alpaca", layout="centered")
 
 st.title("Contador e Identificador de Células de Alpaca")
