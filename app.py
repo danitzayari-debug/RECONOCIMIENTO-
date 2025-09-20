@@ -1,6 +1,6 @@
 # 🦙 Contador de Células de Alpaca (Streamlit App)
 
-Esta aplicación web permite contar y clasificar ovocitos o embriones de alpaca desde imágenes usando OpenCV y Streamlit.
+st.markdown("Esta aplicación web permite contar y clasificar **ovocitos** o **embriones de alpaca** desde imágenes usando OpenCV y Streamlit.")
 
 ## Funcionalidades
 
