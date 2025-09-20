@@ -4,10 +4,10 @@ st.markdown("Esta aplicación web permite contar y clasificar **ovocitos** o **e
 
 ## Funcionalidades
 
--Subida de imágenes (local o GitHub)
--Conteo automático de células
--Clasificación simulada (Ovocito / Embrión)
--Deslizador para ajustar sensibilidad
+st.markdown("- Subida de imágenes (local o GitHub)")
+st.markdown("- Conteo automático de células)")
+st.markdown("- Clasificación simulada (Ovocito / Embrión)")
+st.markdown("- Deslizador para ajustar sensibilidad)")
 
 ## Cómo ejecutar localmente
 
