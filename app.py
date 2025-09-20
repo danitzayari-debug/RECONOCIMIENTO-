@@ -11,7 +11,7 @@ st.markdown("- Deslizador para ajustar sensibilidad)")
 
 ## Cómo ejecutar localmente
 
-st.markdown("""
+st.markdown(`"""`
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
@@ -77,7 +77,7 @@ if image:
     img_contour = img_np.copy()
     cv2.drawContours(img_contour, contours, -1, (0, 255, 0), 2)
 
-    st.image(img_contour, caption=f"🔎 Células detectadas: {cell_count}", use_column_width=True)
+    st.image(img_contour, caption=f"Células detectadas: {cell_count}", use_column_width=True)
 
     # Clasificación simulada según cantidad
     st.subheader("Clasificación celular estimada")
@@ -90,4 +90,3 @@ if image:
 
     st.success(f"Clasificación: **{cell_type}**")
     st.info(f"Nombre de imagen: `{image_name}`")
-
