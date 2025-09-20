@@ -33,7 +33,7 @@ st.markdown("Esta aplicación permite **contar ovocitos y embriones de alpaca** 
 sensitivity = st.slider("🔧 Sensibilidad del conteo (umbral binarización)", 0, 255, 127)
 
 # Cargar imagen
-st.subheader("# 📤 Subida de imágenes (local o GitHub)")
+st.subheader("Subida de imágenes (local o GitHub)")
 img_source = st.radio("Fuente de imagen", ["Subir archivo", "Desde GitHub (URL)"])
 
 image = None
