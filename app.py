@@ -4,10 +4,10 @@ Esta aplicación web permite contar y clasificar ovocitos o embriones de alpaca 
 
 ## Funcionalidades
 
-- 📤 Subida de imágenes (local o GitHub)
-- 🧮 Conteo automático de células
-- 🔍 Clasificación simulada (Ovocito / Embrión)
-- 📊 Deslizador para ajustar sensibilidad
+-Subida de imágenes (local o GitHub)
+-Conteo automático de células
+-Clasificación simulada (Ovocito / Embrión)
+-Deslizador para ajustar sensibilidad
 
 ## Cómo ejecutar localmente
 
@@ -26,11 +26,11 @@ import os
 
 st.set_page_config(page_title="Contador de Células de Alpaca", layout="centered")
 
-st.title("🦙🔬 Contador e Identificador de Células de Alpaca")
+st.title("Contador e Identificador de Células de Alpaca")
 st.markdown("Esta aplicación permite **contar ovocitos y embriones de alpaca** a partir de imágenes.")
 
 # Slider de sensibilidad
-sensitivity = st.slider("🔧 Sensibilidad del conteo (umbral binarización)", 0, 255, 127)
+sensitivity = st.slider("Sensibilidad del conteo (umbral binarización)", 0, 255, 127)
 
 # Cargar imagen
 st.subheader("Subida de imágenes (local o GitHub)")
@@ -53,10 +53,10 @@ elif img_source == "Desde GitHub (URL)":
             image = Image.open(BytesIO(response.content))
             image_name = os.path.basename(url)
         except:
-            st.error("❌ No se pudo cargar la imagen desde la URL.")
+            st.error("No se pudo cargar la imagen desde la URL.")
 
 if image:
-    st.image(image, caption=f"🖼️ Imagen cargada: {image_name}", use_column_width=True)
+    st.image(image, caption=f"Imagen cargada: {image_name}", use_column_width=True)
 
     # Procesamiento OpenCV
     img_np = np.array(image.convert("RGB"))
@@ -74,7 +74,7 @@ if image:
     st.image(img_contour, caption=f"🔎 Células detectadas: {cell_count}", use_column_width=True)
 
     # Clasificación simulada según cantidad
-    st.subheader("🔬 Clasificación celular estimada")
+    st.subheader("Clasificación celular estimada")
     if cell_count <= 3:
         cell_type = "Ovocito"
     elif 4 <= cell_count <= 10:
@@ -82,6 +82,6 @@ if image:
     else:
         cell_type = "Múltiples embriones o agrupación celular"
 
-    st.success(f"✅ Clasificación: **{cell_type}**")
-    st.info(f"📁 Nombre de imagen: `{image_name}`")
+    st.success(f"Clasificación: **{cell_type}**")
+    st.info(f"Nombre de imagen: `{image_name}`")
 
